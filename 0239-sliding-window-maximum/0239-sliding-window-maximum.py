@@ -9,7 +9,7 @@ class Solution:
                 max_q.pop()
             max_q.append(nums[r])
             r += 1
-            if r + 1 > k:
+            if r >= k:
                 res += [max_q[0]]
                 if max_q[0] == nums[l]:
                     max_q.popleft()
