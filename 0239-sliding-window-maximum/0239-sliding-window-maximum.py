@@ -11,5 +11,7 @@ class Solution:
             r += 1
             if r + 1 > k:
                 res += [max_q[0]]
+                if max_q[0] == nums[l]:
+                    max_q.popleft()
                 l += 1
         return res
